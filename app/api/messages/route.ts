@@ -39,8 +39,6 @@ export async function POST(
             id: currentUser.id
           }
         },
-        
-        
       }
     });
 
@@ -75,7 +73,7 @@ export async function POST(
       pusherServer.trigger(user.email!, 'conversation:update', {
         id: conversationId,
         messages: [lastMessage]
-      })
+      });
     });
 
     return NextResponse.json(newMessage)

@@ -149,7 +149,7 @@ const AuthForm = () => {
             type="password"
           />
           <div>
-            <Button disabled={isLoading} fullWidth type="submit">
+            <Button disabled={isLoading} fullwidth type="submit">
               {variant === 'LOGIN' ? 'Sign in' : 'Register'}
             </Button>
           </div>

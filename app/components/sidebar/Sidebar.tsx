@@ -18,5 +18,6 @@ async function Sidebar({ children }: {
     </div>
   )
 }
+export const useClient = true;
 
 export default Sidebar;

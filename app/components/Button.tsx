@@ -4,7 +4,7 @@ import { AiOutlineAccountBook } from 'react-icons/ai';
 
 interface ButtonProps{
     type?: 'button' | 'submit' | 'reset' | undefined;
-    fullwidth?: boolean;
+    fullWidth?: boolean;
     children?: React.ReactNode;
     onClick?: () => void;
     secondary?: boolean;
@@ -14,7 +14,7 @@ interface ButtonProps{
 }
 const Button: React.FC<ButtonProps> = ({
     type,
-    fullwidth,
+    fullWidth,
     children,
     onClick,
     secondary,

@@ -17,14 +17,12 @@ const DesktopSidebar: React.FC<DesktopSidebarProps> = ({
   const routes = useRoutes();
   const [isOpen, setIsOpen] = useState(false);
 
-  console.log({ currentUser})
+  console.log({ currentUser, }, 'TEST')
 
   return ( 
     <>
-     <SettingsModal 
-       currentUser={currentUser} isOpen={isOpen} onClose={() => setIsOpen(false)} />
-      <div 
-       className="
+      <SettingsModal currentUser={currentUser} isOpen={isOpen} onClose={() => setIsOpen(false)} />
+      <div className="
         hidden 
         lg:fixed 
         lg:inset-y-0 
@@ -63,8 +61,7 @@ const DesktopSidebar: React.FC<DesktopSidebarProps> = ({
           </div>
         </nav>
       </div>
-      </>
-   
+    </>
    );
 }
  
